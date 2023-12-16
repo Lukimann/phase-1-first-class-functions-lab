@@ -1,30 +1,45 @@
-const drivers = ['Antonia', 'Nuru', 'Amari', 'Mo'];
-const returnFirstTwoDrivers = function(drivers) {
+let drivers = ['Antonia', 'Nuru', 'Amari', 'Mo'];
+let returnFirstTwoDrivers = function(drivers) {
     return drivers.slice(0,2)
 
 }
-const firstTwoDrivers = returnFirstTwoDrivers(drivers);
+
+let firstTwoDrivers = returnFirstTwoDrivers(drivers);
 console.log(firstTwoDrivers);
 
 
 
-const driver = ['Antonia', 'Nuru', 'Amari', 'Mo'];
-const returnLastTwoDrivers = function(driver) {
+let driver = ['Antonia', 'Nuru', 'Amari', 'Mo'];
+let returnLastTwoDrivers = function(driver) {
     return driver.slice(-2)
 
 }
-const lastTwoDrivers = returnLastTwoDrivers(driver);
+
+
+let lastTwoDrivers = returnLastTwoDrivers(driver);
 console.log(lastTwoDrivers)
 
-const createFareMultiplier = function(multiplier) {
+let createFareMultiplier = function(multiplier) {
     return function (fare) {
         return fare * multiplier;
     }
      
 }
 
-const fareDoubler = function(doubler) {
-    return function (fare) {
-        return fare * doubler;
-    }
+function fareDoubler(num) {
+    let fare = num * 2;
+    return fare
 }
+
+function fareTripler(num) {
+    let fare = num *3;
+    return fare;
+}
+
+let driverSelection = [returnFirstTwoDrivers, returnLastTwoDrivers]
+let selectDifferentDrivers = function (drivers, returnFirstTwoDrivers) {
+    return returnFirstTwoDrivers(drivers)
+}
+
+
+let selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
