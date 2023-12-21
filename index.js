@@ -8,13 +8,11 @@ let firstTwoDrivers = returnFirstTwoDrivers(drivers);
 console.log(firstTwoDrivers);
 
 
-
 let driver = ['Antonia', 'Nuru', 'Amari', 'Mo'];
 let returnLastTwoDrivers = function(driver) {
     return driver.slice(-2)
 
 }
-
 
 let lastTwoDrivers = returnLastTwoDrivers(driver);
 console.log(lastTwoDrivers)
@@ -40,6 +38,5 @@ let driverSelection = [returnFirstTwoDrivers, returnLastTwoDrivers]
 let selectDifferentDrivers = function (drivers, returnFirstTwoDrivers) {
     return returnFirstTwoDrivers(drivers)
 }
-
 
 let selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
